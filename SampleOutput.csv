@@ -1,93 +1,94 @@
-Inventory Date, 2017-07-10 20.36.18
+Inventory Date, 2017-07-10 13.35.02
 Device Name, IDGv7201-A
 Product ID, 5725
 Serial Number, 0000000
-Firmware Ver, IDG.7.2.0.1
+Firmware Version, IDG.7.2.0.1
 
-List of Domains
-,ABC_Test
-, , B2BGateway, test-b2b-gateway
-, , MultiProtocolGateway, Test
-, , WebAppFW, testWAF
-
-,default
-
-,Demo_AppOpt
-
-,Demo_Base64Converter
-, , WSGateway, Base64_Service_WSP
-, , XMLFirewallService, Base64_Decode_XMLFW
-, , XMLFirewallService, Base64_Encode_XMLFW
-
-,Demo_BasicWPSSecurity
-, , XMLFirewallService, SecurityDemoXMLFW
-
-,Demo_Cache
-
-,Demo_ECHO-Service
-, , XMLFirewallService, EchoService-3950
-, , XMLFirewallService, EchoService-9999
-
-,Demo_FanOut
-, , MultiProtocolGateway, FanOut.MPGW
-, , XMLFirewallService, XMLFW.Responder.A
-, , XMLFirewallService, XMLFW.Responder.B
-, , XMLFirewallService, XMLFW.Responder.C
-
-,Demo_JSON
-, , MultiProtocolGateway, JSON_to_SOAP_Converter
-
-,Demo_JSONiq
-, , MultiProtocolGateway, JSONiq.MPGW
-
-,Demo_Logging-FTP
-, , MultiProtocolGateway, EchoServiceTester
-, , MultiProtocolGateway, Logger-FTP-Method
-, , XMLFirewallService, EchoService
-
-,Demo_MQ_LogTarget
-, , MultiProtocolGateway, ConfigLog
-, , MultiProtocolGateway, DirectLog
-, , MultiProtocolGateway, IndirectLog
-, , MultiProtocolGateway, IndirectLogWriter
-
-,Demo_MQReqResp
-, , MultiProtocolGateway, MQ_Req_Resp
-
-,Demo_SAMLGeneration
-, , MultiProtocolGateway, SAMLGenerator
-
-,Demo_URI-Router
-, , MultiProtocolGateway, Demo_URI-Router
-, , WSGateway, Level_1_A_WSP
-, , WSGateway, Level_1_B_WSP
-, , WSGateway, Level_2_A_BackEnd_WSP
-, , WSGateway, Level_2_B_BackEnd_WSP
-
-,DynamicRouteSample
-, , MultiProtocolGateway, Router.MPGW
-, , MultiProtocolGateway, XML-Responder-A
-, , MultiProtocolGateway, XML-Responder-B
-, , MultiProtocolGateway, XML-Responder-C
-
-,GatewayScriptTest
-, , MultiProtocolGateway, GWScriptTest
-
-,SSL-Test-Destination
-, , MultiProtocolGateway, APIM-BackSide-SSL-App
-
-,SSL-Test-Source
-, , MultiProtocolGateway, APIM-Simulator
-, , MultiProtocolGateway, SSL-Proxy_for_APIM
-
-,Test-Polaris
-, , MultiProtocolGateway, PUT.MPGW.Passthrough
-
-,Util_Responders
-, , MultiProtocolGateway, ECHO-Responder
-, , MultiProtocolGateway, JSON-Responder
-, , MultiProtocolGateway, SOAP-Responder
-, , MultiProtocolGateway, XML-Responder
-
-,XML-Tests
-, , MultiProtocolGateway, XML2SOAP.MPGW
+,
+Domain, Gateway Type, Gateway Name, 
+ABC_Test
+, B2BGateway, test-b2b-gateway
+, MultiProtocolGateway, Test
+, WebAppFW, testWAF
+, 
+default
+, 
+Demo_AppOpt
+, 
+Demo_Base64Converter
+, WSGateway, Base64_Service_WSP
+, XMLFirewallService, Base64_Decode_XMLFW
+, XMLFirewallService, Base64_Encode_XMLFW
+, 
+Demo_BasicWPSSecurity
+, XMLFirewallService, SecurityDemoXMLFW
+, 
+Demo_Cache
+, 
+Demo_ECHO-Service
+, XMLFirewallService, EchoService-3950
+, XMLFirewallService, EchoService-9999
+, 
+Demo_FanOut
+, MultiProtocolGateway, FanOut.MPGW
+, XMLFirewallService, XMLFW.Responder.A
+, XMLFirewallService, XMLFW.Responder.B
+, XMLFirewallService, XMLFW.Responder.C
+, 
+Demo_JSON
+, MultiProtocolGateway, JSON_to_SOAP_Converter
+, 
+Demo_JSONiq
+, MultiProtocolGateway, JSONiq.MPGW
+, 
+Demo_Logging-FTP
+, MultiProtocolGateway, EchoServiceTester
+, MultiProtocolGateway, Logger-FTP-Method
+, XMLFirewallService, EchoService
+, 
+Demo_MQ_LogTarget
+, MultiProtocolGateway, ConfigLog
+, MultiProtocolGateway, DirectLog
+, MultiProtocolGateway, IndirectLog
+, MultiProtocolGateway, IndirectLogWriter
+, 
+Demo_MQReqResp
+, MultiProtocolGateway, MQ_Req_Resp
+, 
+Demo_SAMLGeneration
+, MultiProtocolGateway, SAMLGenerator
+, 
+Demo_URI-Router
+, MultiProtocolGateway, Demo_URI-Router
+, WSGateway, Level_1_A_WSP
+, WSGateway, Level_1_B_WSP
+, WSGateway, Level_2_A_BackEnd_WSP
+, WSGateway, Level_2_B_BackEnd_WSP
+, 
+DynamicRouteSample
+, MultiProtocolGateway, Router.MPGW
+, MultiProtocolGateway, XML-Responder-A
+, MultiProtocolGateway, XML-Responder-B
+, MultiProtocolGateway, XML-Responder-C
+, 
+GatewayScriptTest
+, MultiProtocolGateway, GWScriptTest
+, 
+SSL-Test-Destination
+, MultiProtocolGateway, APIM-BackSide-SSL-App
+, 
+SSL-Test-Source
+, MultiProtocolGateway, APIM-Simulator
+, MultiProtocolGateway, SSL-Proxy_for_APIM
+, 
+Test-Polaris
+, MultiProtocolGateway, PUT.MPGW.Passthrough
+, 
+Util_Responders
+, MultiProtocolGateway, ECHO-Responder
+, MultiProtocolGateway, JSON-Responder
+, MultiProtocolGateway, SOAP-Responder
+, MultiProtocolGateway, XML-Responder
+, 
+XML-Tests
+, MultiProtocolGateway, XML2SOAP.MPGW

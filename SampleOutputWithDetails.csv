@@ -1,0 +1,295 @@
+Inventory Date, 2017-07-10 13.38.13
+Device Name, IDGv7201-A
+Product ID, 5725
+Serial Number, 0000000
+Firmware Version, IDG.7.2.0.1
+
+,
+Domain, Gateway Type, Gateway Name, Attribute, Attribute Value, 
+ABC_Test
+, B2BGateway, test-b2b-gateway
+, , , mAdminState, enabled
+, , , XMLManager, default
+, MultiProtocolGateway, Test
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, Test.HTTP.FSH.27080
+, , , BackendUrl, http://dummy.backside.com/dummy
+, , , Type, static-backend
+, WebAppFW, testWAF
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, DemoSvr
+, , , LocalPort, 80
+, , , FrontProtocol, __internal__webappfw_ABC_Test_testWAF_80_HTTP_0
+, 
+default
+, 
+Demo_AppOpt
+, 
+Demo_Base64Converter
+, WSGateway, Base64_Service_WSP
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , Type, dynamic-backend
+, XMLFirewallService, Base64_Decode_XMLFW
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 127.0.0.1
+, , , LocalPort, 6402
+, , , Type, loopback-proxy
+, XMLFirewallService, Base64_Encode_XMLFW
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 127.0.0.1
+, , , LocalPort, 6401
+, , , Type, loopback-proxy
+, 
+Demo_BasicWPSSecurity
+, XMLFirewallService, SecurityDemoXMLFW
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 0.0.0.0
+, , , LocalPort, 12001
+, , , Type, loopback-proxy
+, 
+Demo_Cache
+, 
+Demo_ECHO-Service
+, XMLFirewallService, EchoService-3950
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 0.0.0.0
+, , , LocalPort, 3950
+, , , Type, loopback-proxy
+, XMLFirewallService, EchoService-9999
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 0.0.0.0
+, , , LocalPort, 9999
+, , , Type, loopback-proxy
+, 
+Demo_FanOut
+, MultiProtocolGateway, FanOut.MPGW
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, FanOut.FSH.HTTP.29000
+, , , BackendUrl, http://dummy.backside
+, , , Type, static-backend
+, XMLFirewallService, XMLFW.Responder.A
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 0.0.0.0
+, , , LocalPort, 29010
+, , , Type, loopback-proxy
+, XMLFirewallService, XMLFW.Responder.B
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 0.0.0.0
+, , , LocalPort, 29020
+, , , Type, loopback-proxy
+, XMLFirewallService, XMLFW.Responder.C
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, 0.0.0.0
+, , , LocalPort, 29030
+, , , Type, loopback-proxy
+, 
+Demo_JSON
+, MultiProtocolGateway, JSON_to_SOAP_Converter
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, HTTP_FSH_4800
+, , , BackendUrl, http://localhost:6404/base64
+, , , Type, static-backend
+, 
+Demo_JSONiq
+, MultiProtocolGateway, JSONiq.MPGW
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, JSONiq.MPGW.FSH.HTTP.42000
+, , , BackendUrl, http://127.0.0.1:3950/AnyURI
+, , , Type, static-backend
+, 
+Demo_Logging-FTP
+, MultiProtocolGateway, EchoServiceTester
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, EchoServiceTesterFSH-21010
+, , , BackendUrl, http://127.0.0.1:21000
+, , , Type, static-backend
+, MultiProtocolGateway, Logger-FTP-Method
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, Logger-FSH-HTTP-Ext-21020
+, , , BackendUrl, http://127.0.0.1:21000
+, , , Type, static-backend
+, XMLFirewallService, EchoService
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , LocalAddress, Localhost
+, , , LocalPort, 21000
+, , , Type, loopback-proxy
+, 
+Demo_MQ_LogTarget
+, MultiProtocolGateway, ConfigLog
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, ConfigLog.HTTP.FSH.3780
+, , , BackendUrl, http://127.0.0.1:9511/SomeURL
+, , , Type, static-backend
+, MultiProtocolGateway, DirectLog
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, DirectLog.HTTP.FSH.3795
+, , , BackendUrl, http://Localhost:3950/SomeURL
+, , , Type, static-backend
+, MultiProtocolGateway, IndirectLog
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, IndirectLog.HTTP.FSH.3785
+, , , BackendUrl, http://Localhost:3950/SomeURL
+, , , Type, static-backend
+, MultiProtocolGateway, IndirectLogWriter
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, IndirectLogWriter.HTTP.FSH.3790
+, , , BackendUrl, http://bitbucket.ibm.com/dummy
+, , , Type, static-backend
+, 
+Demo_MQReqResp
+, MultiProtocolGateway, MQ_Req_Resp
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, MQ_Req_Resp_FSH_HTTP_3200
+, , , BackendUrl, dpmq://MyDemoQM/?RequestQueue=REQUEST.Q;ReplyQueue=RESPONSE.Q
+, , , Type, static-backend
+, 
+Demo_SAMLGeneration
+, MultiProtocolGateway, SAMLGenerator
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, SAMLGenerator.FSH.HTTP.10100
+, , , BackendUrl, http://localhost:9504/SAML
+, , , Type, static-backend
+, 
+Demo_URI-Router
+, MultiProtocolGateway, Demo_URI-Router
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, FSH_HTTP_MainEntry_30000
+, , , Type, dynamic-backend
+, WSGateway, Level_1_A_WSP
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , Type, static-from-wsdl
+, WSGateway, Level_1_B_WSP
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , Type, static-from-wsdl
+, WSGateway, Level_2_A_BackEnd_WSP
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , Type, static-from-wsdl
+, WSGateway, Level_2_B_BackEnd_WSP
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , Type, static-from-wsdl
+, 
+DynamicRouteSample
+, MultiProtocolGateway, Router.MPGW
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, Router.MPGW.HTTP.FSH.9550
+, , , BackendUrl, http://dummy.backside.com
+, , , Type, static-backend
+, MultiProtocolGateway, XML-Responder-A
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, XML-A-HTTP.FSH.9551
+, , , BackendUrl, http://XML.Response.com
+, , , Type, static-backend
+, MultiProtocolGateway, XML-Responder-B
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, XML-B-HTTP.FSH.9552
+, , , BackendUrl, http://XML.Response.com
+, , , Type, static-backend
+, MultiProtocolGateway, XML-Responder-C
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, XML-C-HTTP.FSH.9553
+, , , BackendUrl, http://XML.Response.com
+, , , Type, static-backend
+, 
+GatewayScriptTest
+, MultiProtocolGateway, GWScriptTest
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, GWScriptTest.FSH.HTTP.35000
+, , , BackendUrl, http://dummy.backside.com
+, , , Type, static-backend
+, 
+SSL-Test-Destination
+, MultiProtocolGateway, APIM-BackSide-SSL-App
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, APIM-BackSide-SSL-App.FSH.HTTPS.20661
+, , , BackendUrl, http://localhost:9999
+, , , Type, static-backend
+, 
+SSL-Test-Source
+, MultiProtocolGateway, APIM-Simulator
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, APIM-Simulator.FSH.HTTP.20650
+, , , BackendUrl, http://localhost:20655
+, , , Type, static-backend
+, MultiProtocolGateway, SSL-Proxy_for_APIM
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, SSL-Proxy.FSH.HTTP.20655
+, , , BackendUrl, https://192.168.76.130:20661
+, , , Type, static-backend
+, 
+Test-Polaris
+, MultiProtocolGateway, PUT.MPGW.Passthrough
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, PUT-MPG.FSH.HTTP.8875
+, , , BackendUrl, http://localhost:9504
+, , , Type, static-backend
+, 
+Util_Responders
+, MultiProtocolGateway, ECHO-Responder
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, ECHO-Responder.HTTP.FSH.Ext.9514
+, , , BackendUrl, http://dummy.back.side
+, , , Type, static-backend
+, MultiProtocolGateway, JSON-Responder
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, JSON-Responder.HTTP.FSH.Ext.9513
+, , , BackendUrl, http://dummy.back.side
+, , , Type, static-backend
+, MultiProtocolGateway, SOAP-Responder
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, SOAP-Responder.HTTP.FSH.Ext.9511
+, , , BackendUrl, http://dummy.backside.com
+, , , Type, static-backend
+, MultiProtocolGateway, XML-Responder
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, XML-Responder.HTTP.FSH.Ext.9512
+, , , BackendUrl, http://dummy.back.side
+, , , Type, static-backend
+, 
+XML-Tests
+, MultiProtocolGateway, XML2SOAP.MPGW
+, , , mAdminState, enabled
+, , , XMLManager, default
+, , , FrontProtocol, XML2SOAP.FSH.HTTP.9611
+, , , BackendUrl, http://localhost:9504/SomeURL
+, , , Type, static-backend
