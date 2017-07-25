@@ -1,7 +1,7 @@
 # DataPower-Gateway-Inventory
-# DEPRICATION NOTICE 
-## DEPRICATION NOTICE - PLEASE SEE RayMN/DataPower-Configuation-Inventory
-# DEPRICATION NOTICE 
+# DEPRECATION NOTICE 
+## PLEASE SEE RayMN/DataPower-Configuation-Inventory
+# DEPRECATION NOTICE 
 
 ## Synopsis
 This is a tool that extracts a list of all of the gateways on a DataPower appliance from an export of the entire appliance.
