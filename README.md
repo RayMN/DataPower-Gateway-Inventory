@@ -1,6 +1,6 @@
 # DataPower-Gateway-Inventory
 # DEPRICATION NOTICE 
-# DEPRICATION NOTICE - PLEASE SEE RayMN/DataPower-Configuation-Inventory
+## DEPRICATION NOTICE - PLEASE SEE RayMN/DataPower-Configuation-Inventory
 # DEPRICATION NOTICE 
 
 ## Synopsis
